@@ -34,8 +34,11 @@ public class Utils {
     }
 
     public static Employees returnEmployeOrNull(List<Employees> employeesList, Integer idIncreaseSalary) {
+
         return employeesList.stream().filter(elementOfEmployeesList -> elementOfEmployeesList
                 .getId()
                 .equals(idIncreaseSalary)).findFirst().orElse(null);
+
     }
+
 }
