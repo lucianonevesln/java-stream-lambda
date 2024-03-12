@@ -46,10 +46,8 @@ public class Main {
 
         }
 
-        Utils.messageEnterTheSalaryIncrease();
-        Integer idIncreaseSalary = read.nextInt();
-        Utils.messageEnterThePercentage();
-        Double percentageIncreaseSalary = read.nextDouble();
+        Integer idIncreaseSalary = null;
+        Double percentageIncreaseSalary = null;
         Employees employee = null;
 
         while (Utils.returnEmployeOrNull(employeesList, idIncreaseSalary) == null) {
